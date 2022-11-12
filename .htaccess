@@ -1,0 +1,12 @@
+#Turn on the rewriting engine
+#([0-9]+)
+#([a-zA-Z0-9-_]+)
+#ErrorDocument 404 /Ql_Nha_hang/404.html
+#ErrorDocument 403 /Ql_Nha_hang/403.html
+ReWriteEngine on
+RewriteRule ^trang-chu.html$ index.php
+RewriteRule ^([0-9]+)/san-pham.html$ product.php?ma_loai=$1
+RewriteRule ^([a-zA-Z-_]+)/([0-9]+).html$ single.php?ma_san_pham=$2&ten_san_pham=$1
+RewriteRule ^tim-kiem.html$ search.php
+RewriteRule ^lien-he.html$ contact.php
+

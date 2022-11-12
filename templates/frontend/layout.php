@@ -1,0 +1,10 @@
+<?php
+include('head.php');
+include('header.php');
+include('header-bot.php');
+include('banner-top.php');
+include('banner.php');
+include('content.php');
+include('coupons.php');
+include('footer.php');
+?>
